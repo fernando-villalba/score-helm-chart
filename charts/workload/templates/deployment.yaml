@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "<CHARTNAME>.name" . }}
+  name: {{ include "workload.name" . }}
   labels:
-    {{- include "<CHARTNAME>.labels" . | nindent 4 }}
+    {{- include "workload.labels" . | nindent 4 }}
 spec:
   selector:
     matchLabels:
-      {{- include "<CHARTNAME>.selectorLabels" . | nindent 6 }}
+      {{- include "workload.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "<CHARTNAME>.selectorLabels" . | nindent 8 }}
+        {{- include "workload.selectorLabels" . | nindent 8 }}
     spec:
       containers:
         {{- range $name, $container := .Values.containers }}

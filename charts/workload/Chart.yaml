@@ -1,9 +1,6 @@
-#
-# This file is replaced (generated) during the Helm chart scaffolding.
-#
 apiVersion: v2
-name: score-workload
-description: A Helm chart for Kubernetes
+appVersion: 0.2.0
+description: A helm chart to provision standard workloads using score-helm. This chart can be forked and adapted for other use cases.
+name: workload
 type: application
-version: "0.0.0"
-appVersion: "0.0.0"
+version: 0.2.0

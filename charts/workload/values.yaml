@@ -9,7 +9,7 @@
 #     - name: www
 #       protocol: TCP
 #       port: 80
-#       targetPort: 8080
+#       targetPort: 80
 
 # containers:
 #   my-container:
@@ -55,10 +55,4 @@ containers:
   frontend:
     image:
       name: nginx:alpine
-service:
-  ports:
-    - name: www
-      port: 80
-      protocol: TCP
-      targetPort: 80
-  type: ClusterIP
+

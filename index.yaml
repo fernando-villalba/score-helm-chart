@@ -1,26 +1,15 @@
 apiVersion: v1
 entries:
-  score-workload:
-  - apiVersion: v2
-    appVersion: 0.0.0
-    created: "2022-11-10T21:24:29.50621+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 673001b385b718eafe6c5a0f3d15a5c54680a1801c0c00d79e2f003868e42bf0
-    name: score-workload
-    type: application
-    urls:
-    - https://fernando-villalba.github.io/score-helm-chart/score-workload-0.0.0.tgz
-    version: 0.0.0
   workload:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2022-11-10T21:24:29.506431+01:00"
+    created: "2022-11-11T11:32:11.649615+01:00"
     description: A helm chart to provision standard workloads using score-helm. This
       chart can be forked and adapted for other use cases.
-    digest: 789eb2a9b59fcdff4732e3138eeee670a6b06ebd7542e7da4d69737de24bbae0
+    digest: 8754e0b707dfd67019936821118ffb4d99784c3a7945d5e3ed94d154ce87a960
     name: workload
     type: application
     urls:
     - https://fernando-villalba.github.io/score-helm-chart/workload-0.2.0.tgz
     version: 0.2.0
-generated: "2022-11-10T21:24:29.505817+01:00"
+generated: "2022-11-11T11:32:11.64891+01:00"

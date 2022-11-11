@@ -51,8 +51,8 @@
 #         memory: 128Mi
 
 
-containers:
-  frontend:
-    image:
-      name: nginx:alpine
+# containers:
+#   frontend:
+#     image:
+#       name: nginx:alpine
 

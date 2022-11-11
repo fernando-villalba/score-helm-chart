@@ -51,15 +51,14 @@
 #         memory: 128Mi
 
 
-apiVersion: score.dev/v1b1
-metadata:
-  name: frontend
 containers:
   frontend:
-    image: nginx:alpine
+    image:
+      name: nginx:alpine
 service:
   ports:
-    www:
+    - name: www
       port: 80
-      targetPort: 80
       protocol: TCP
+      targetPort: 80
+  type: ClusterIP
